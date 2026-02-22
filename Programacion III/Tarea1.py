@@ -70,8 +70,7 @@ class ListaDoblementeEnlazada:
                 dot.edge(actual.carnet, actual.siguiente.carnet, constraint='true')
                 dot.edge(actual.siguiente.carnet, actual.carnet, constraint='true')
             actual = actual.siguiente
-        dot.render(nombre_archivo, format='png', view=True)
-
+        dot.render(f"imagenes/{nombre_archivo}", format='png', cleanup=True)
 def menu():
     lista = ListaDoblementeEnlazada()
     while True:

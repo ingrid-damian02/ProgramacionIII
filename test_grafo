@@ -1,0 +1,6 @@
+// Mi Primer Grafo
+digraph {
+	A [label=Inicio]
+	B [label=Fin]
+	A -> B [label="va a"]
+}
